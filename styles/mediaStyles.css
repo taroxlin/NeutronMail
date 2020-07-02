@@ -1,0 +1,522 @@
+
+
+@media(max-width:1200px){
+    body{
+        width: 100vw;
+    }
+    header{
+        width: 92vw;
+        margin: 20px 20px;
+        display: grid;
+        grid-template-areas: "header-left menu"
+                            "header-left buttons";
+        grid-template-rows: 40px;
+        grid-template-columns: 35vw 57vw;
+    }
+    .about-thread{
+        width: 92%;
+    }
+    .about-thread h2{
+        font-size: 45px;
+        letter-spacing: -0.9px;
+    }
+    .socials {
+        margin-left: 50px;
+    }
+    .menu{
+        width: 100%;
+        grid-area: menu;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .log-in{
+        grid-area: buttons;
+        margin-left: 30vw;
+        line-height: 50px;
+
+    }
+    .sign-up{
+
+        grid-area: buttons;
+        margin: 0 30px 0 auto;
+    }
+    .security-container{
+        width: 95vw;
+        grid-template-areas: "slot1 slot2 slot3"
+        "slot4 slot4 slot4";
+        grid-template-rows: 210px 270px;
+    }
+    .about-buttons {
+        margin-top: 20px;
+    }
+    .app-description{
+        margin-top: 50px;
+        width: 38%;
+        max-width: 480px;
+    }
+
+    .app-description h3 {
+        font-size: 26px;
+    }
+    .app-description p{
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .app-download-container{
+        margin: auto;
+    }
+    .img-devices{
+        width: 400px;
+        margin-left: 57vw;
+        margin-top: 69px;
+    }
+    .security-thread h3{
+        font-size: 22px;
+        letter-spacing: -0.9px;
+        margin-right: 5px;
+    }
+    .security-thread p {
+        font-size: 16px;
+        margin-right: 5px
+    }
+    
+    .grid-slot1:after{
+        display: none;
+    }
+    .app-container::after{
+        display: none;
+    }
+
+    .grid-slot2:after{
+        display: none;
+    }
+
+    .grid-slot3:after{
+        display: none;
+    }
+
+    .grid-slot4 h4{
+        font-size: 50px;
+        margin: auto;
+        width:80%;
+        text-align: center;
+    }
+
+    .grid-slot4 p{
+        margin:  10px auto;
+        font-size: 25px;
+        width:90%;
+        text-align: left;
+    }
+
+    .grid-slot4:after{
+        display: none;
+    }
+    .button-bordered{
+        position: relative;
+        margin-right:calc(50% - 180px);
+    }
+    .donate {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .quote{
+        margin-left:10vw;
+    }
+    .footer-sign{
+        margin: 0;
+
+    }
+    .footer-partners{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .partners {
+        margin: 45px auto;
+        width: 100%;
+    }
+    .partners > img {
+        width:50%;
+    }
+    footer::before{
+        display: none;
+    }
+    .empty-cont {
+        display: none;
+    }
+    .footer-blocks{
+        width: 87vw;
+        grid-template-areas: "info company legal neutron";
+    }
+
+    footer::after{
+    display: none;
+    }
+    
+}
+
+@media(max-width:1000px){
+    .img-devices{
+        width: 350px;
+        margin-top: 130px;
+        margin-left: 58vw;
+    }
+}
+
+@media(max-width:800px){
+    header {
+        display: initial;
+        margin: 15px 15px;
+    }
+    .about-thread h2{
+        width: 90%;
+        line-height: 50px;
+    }
+    .header-left {
+        margin-bottom: 0;
+    }
+    .lang-list {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .lang-list li {
+        line-height: 35px;
+    }
+    .lang-list li:before {
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .menu li {
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 30px;
+    }
+    .log-in {
+        margin-top: 15px;
+        margin-left: 45vw;
+    }
+    .sign-up {
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    .about-buttons {
+        margin-top: 120px;
+    }
+    .security-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-slot1,.grid-slot2,.grid-slot3{
+        margin-bottom: 50px;
+    }
+    .grid-slot1 > p,.grid-slot2 > p ,.grid-slot3 > p{
+    font-size: 22px;
+    }
+    .img-shield, .img-lock, .img-key {
+        height: auto;
+        width: 100px;
+    }
+    .img-lock{
+        width: 140px;
+        margin-left: -35px;
+        margin-right: -20px;
+    }
+    .security-container{
+        width: 80%;
+        margin: auto;
+    }
+    .security-thread{
+        width: 90%;
+        margin: auto;
+    }
+    .security-thread h3{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .security-thread p{
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+
+    .grid-slot4 {
+        width: 90%;
+        margin: auto;
+    }
+    .partners{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .partners > img {
+        width: 80%;
+        margin: auto;
+    }
+    .app-container{
+        padding-bottom: 20px;
+    }
+    .app-description
+    {
+        width: 80%;
+        padding-bottom: 80px;
+    }
+    .app-description h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .app-description p {
+        font-size: 24px;
+        text-align: center;
+    }
+    .img-devices{
+        display: none;
+    }
+    .donate-description {
+        width: 90%;
+        margin-bottom: 90px;
+    }
+    .donate-description p{
+        width: 100%;
+        text-align: justify;
+        margin: 0 auto 50px;
+    }
+    footer {
+        width: 100%;
+        padding-left: 10px;
+        margin: auto;
+    }
+    .footer-sign {
+        font-size: 24px;
+        width: 80%;
+    }
+    .footer-blocks{
+        width: 100%;
+        grid-template-areas:  "info info info"
+                        " company legal neutron";
+        grid-template-rows: 150px 200px;
+    }
+    .info{
+        display: grid;
+        grid-template-areas: "emails moreinf";
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 50vw 50vw;
+    }
+    .info > ul {
+        grid-area: emails;
+        margin: 0;
+    }
+    .info > p {
+     grid-area: moreinf;    
+        margin: 0;
+    }
+    .soc-nets li{
+        font-size: 16px;
+        width: 60%;
+    }
+ 
+}
+
+
+@media(max-width:480px){
+    body{
+        min-width: 480px;
+    }
+    header {
+        min-width: 480px;
+    }
+    .about-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-left{
+        width: 80%;
+        margin: auto;
+    }
+    .header-left h1 {
+        text-align: center;
+    }
+    .lang-list {
+        flex-direction: row;
+        margin: auto;
+    }
+    .menu {
+        position: relative;
+        width: 96%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    .menu >li {
+        width: 28%;
+        line-height: 40px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .socials{
+        display: none;
+    }
+    .log-in{
+        width: 45%;
+        margin-left: 5%;
+    }
+    .about-buttons{
+        display: flex; 
+        height: 180px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 180px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        justify-content: space-evenly;
+    }
+    .button-create {
+       margin: 5px 80px;
+    }
+    .button-bordered {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    .about-buttons > button:not(:first-child){
+        width: 65px;
+        height: 65px;
+        margin: 5px 10px;
+        font-size: 35px;
+    }
+    .security-container{
+        width: 98%;
+    }
+    .buttons-shadow {
+        display: none;
+    }
+    .img-shield, .img-lock,.img-key{
+        display: none;
+    }
+    .grid-slot1,.grid-slot2,.grid-slot3,.grid-slot4{
+        width: 98%;
+        text-align: center;
+    }
+    .quote {
+        display: none;
+    }
+    .security-thread{
+        width: 98%;
+    }
+    .app-description{
+        padding-bottom: 0px;
+    }
+    .app-download-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .app-download-container > button {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .donate-description {
+        margin-bottom: 10px;
+    }
+    .donate-button-container {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .donate-button-container > button {
+        margin: 10px auto 15px;
+
+    }
+    .footer-partners{
+        width: 97%;
+    }
+    .footer-sign {
+        width: 100%;
+        text-align: center;
+    }
+    .info {
+        margin: auto;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-blocks {
+        display: flex;
+        flex-direction: column;
+    }
+    .company, .legal,.neutronmail{
+        width: 96%;
+        margin: 15px auto;
+    }
+    .company p,.legal p, .neutronmail p{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .company-list li::after, .legal-list li::after, .neutronmail-list li::after {
+        display: none;
+    }
+
+    .company-list li, .legal-list li, .neutronmail-list li{
+     line-height: 16px;
+     text-align: center;   
+    }
+    .company-list, .legal-list, .neutronmail-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copyright {
+        width: 98%;
+    }
+    .soc-nets {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .soc-nets li{
+        width: 33%;
+        line-height: 40px;
+
+    }
+    .soc-nets li::before {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1401px){
+    body {
+        margin: auto;
+    }
+
+    .img-devices {
+        margin-left: 800px;
+        margin-top:  70px;
+    }
+
+    .app-container::after{
+    right: calc(50% - 700px);
+    }
+    .grid-slot3::after{
+        right: calc(50vw - 708px);
+    }
+    footer::before{
+        width: 1240px;
+        margin-left: calc(50vw - 700px);
+    }
+    footer::after{
+        margin-left: calc(50vw + 540px) 
+    }
+}
